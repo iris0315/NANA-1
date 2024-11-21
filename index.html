@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NANA貓咪認養網</title>
+    <style>
+        * {
+            /* 取消預設邊界 */
+            margin: 0;
+            /* 取消預設縮排 */
+            padding: 0;
+            /* 字型設定 */
+            font-family: 微軟正黑體;
+            background-color: rgb(236, 245, 255);
+        }
+
+        .wrap {
+
+            /* 固定寬度 */
+            width: 1200px;
+            /* 段隨著網頁移動: div 的網頁(頁邊)置中對齊 */
+            margin: auto;
+            /* 文字及物件的置中對齊 */
+            /* text-align: center; */
+
+        }
+
+        .nav {
+            float: right;
+            margin-bottom: 50px;
+
+        }
+
+
+        .nav ul li {
+            float: left;
+            margin-right: 20px;
+            list-style: none;
+        }
+
+        .nav ul li a {
+            /* 取消超連結底線 */
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+
+        }
+
+        .nav ul li a:hover {
+            color: rgb(241, 241, 241);
+            /* 超連結背景色 */
+            background-color: rgb(83, 73, 224);
+            padding: 10px;
+            height: 90px;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+
+        .header {
+            /* 寬度 */
+            width: 300px;
+            /* 高度 */
+            height: 110px;
+            /* 定位基準點 */
+            position: relative;
+        }
+
+        .header img {
+            width: 150px;
+            height: 150px;
+
+        }
+
+
+
+        .box img {
+            width: 1200px;
+            height: 500px;
+            margin: 5px;
+
+        }
+
+        .space {
+            height: 50px;
+        }
+
+        .box1 {
+            /* 對齊線 border */
+            /* border: 1px solid rgb(245, 204, 23); */
+            /* display:flex 意思是 彈性佈局 ，它能夠擴展和收縮flex 容器內的元素，以最大限度地填充可用空間。 */
+            display: flex;
+            /* 平均分配寬度和間距 */
+            justify-content: space-between
+        }
+
+        .content {
+            margin-left: 400px;
+            text-align: center;
+
+        }
+
+        .into {
+
+            float: right;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- 最外層外框 -->
+    <div class="wrap">
+
+
+        <div class="space">
+            <!-- 首頁區 -->
+            <div class="header">
+                <!-- LOGO -->
+                <a href="./index.html">
+                    <img src="./image/logo.png" alt="">
+                </a>
+            </div>
+            <!-- 選單區 -->
+            <div class="nav">
+                <ul>
+                    <li><a href="./nana2.html">貓貓認養</a></li>
+                    <li><a href="./nana3.html">販售貓周邊</a></li>
+                    <li><a href="./nana4.html">愛心捐贈</a></li>
+                    <li><a href="./nana5.html">手繪貓貓照</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 旋轉木馬照片 -->
+        <div class="box">
+            <ul>
+                <li><img src="./image/image-1 (1).png" alt=""></li>
+                <li><img src="./image/image-1(2).png" alt=""></li>
+            </ul>
+        </div>
+        <!-- jQuery 主程式 -->
+        <script src="./js/jquery-1.11.3.min.js"></script>
+        <!-- 旋轉木馬主程式 -->
+        <script src="./js/jquery.jcarousellite.min.js"></script>
+        <script>
+            $(function () {
+                $('.box').jCarouselLite({
+                    auto: 2000,   //多久時間捲動(以毫秒為單位:1秒=1000毫秒)
+                    speed: 1200,   //每次捲動的速度
+                    scroll: 1,    //每次捲動的張數
+                    visible: 1,   //可見的張數
+                });
+
+            });
+        </script>
+        <div class="space">
+
+        </div>
+        <div class="box1">
+            <!-- 內容區 -->
+            <div class="content">
+                <h1>貓貓餐餐有飯吃 我的堅持</h1>
+                <h2>助糧就全台萬隻弱勢貓貓</h2>
+            </div>
+
+
+            <!-- 資訊區 -->
+            <div class="into">
+                <p>聯絡我們</p>
+                <p>電話:(03)4861234</p>
+                <P>地址:桃園市新屋區藻礁路1668號</P>
+                <P>聯絡信箱:nanacat@gmail.com</P>
+                <p>統一編號:1234 5678</p>
+                <p>服務時間:周三至周日 10:00~18:00</p>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

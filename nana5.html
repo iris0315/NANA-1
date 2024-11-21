@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NANA貓咪認養網</title>
+    <style>
+        * {
+            /* 取消預設邊界 */
+            margin: 0;
+            /* 取消預設縮排 */
+            padding: 0;
+            /* 字型設定 */
+            font-family: 微軟正黑體;
+            background-color: rgb(236, 245, 255);
+        }
+
+        .wrap {
+
+            /* 固定寬度 */
+            width: 1200px;
+            /* 段隨著網頁移動: div 的網頁(頁邊)置中對齊 */
+            margin: auto;
+            /* 文字及物件的置中對齊 */
+            /* text-align: center; */
+
+        }
+
+        .nav {
+            float: right;
+            margin-bottom: 50px;
+
+        }
+
+
+        .nav ul li {
+            float: left;
+            margin-right: 20px;
+            list-style: none;
+        }
+
+        .nav ul li a {
+            /* 取消超連結底線 */
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+
+        }
+
+        .nav ul li a:hover {
+            color: rgb(241, 241, 241);
+            /* 超連結背景色 */
+            background-color: rgb(83, 73, 224);
+            padding: 10px;
+            height: 90px;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+
+        .header {
+            /* 寬度 */
+            width: 300px;
+            /* 高度 */
+            height: 110px;
+            /* 定位基準點 */
+            position: relative;
+        }
+
+        .header img {
+            width: 150px;
+            height: 150px;
+
+        }
+
+        #content {
+            padding-top: 50px;
+        }
+
+        #content img {
+            /* border: 1px solid red; */
+            /* 寬度 */
+            width: 550px;
+            /* 高度 */
+            height: 800px;
+            /* padding-top: 150px; */
+        }
+
+        .sidebar {
+            /* border: 1px solid red; */
+            width: 550px;
+            padding-top: 200px;
+            line-height: 1.5;
+            font-size: 20px;
+        }
+
+        .bob {
+            width: 1200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+
+
+        <div class="space">
+            <!-- 首頁區 -->
+            <div class="header">
+                <!-- LOGO -->
+                <a href="./index.html">
+                    <img src="./image/logo.png" alt="">
+                </a>
+            </div>
+            <!-- 選單區 -->
+            <div class="nav">
+                <ul>
+                    <li><a href="./nana2.html">貓貓認養</a></li>
+                    <li><a href="./nana3.html">販售貓周邊</a></li>
+                    <li><a href="./nana4.html">愛心捐贈</a></li>
+                    <li><a href="#">手繪貓貓照</a></li>
+                </ul>
+            </div>
+            <div class="bob">
+                <!-- 左側內容區 -->
+                <div id="content"><img src="./image/image-5.jpg" alt=""></div>
+                <!-- 右側文字區 -->
+                <div class="sidebar">
+                    <p>當貓咪遇上水彩畫家，一場柔美的色彩與溫暖的毛茸茸邂逅拉開序幕。💖</p>
+                    <p>隨著畫筆輕輕地舞動，貓咪的靈動與水彩的透明感交織成一幅幅如夢似幻的畫作。</p>
+                    <p>輕柔的水彩筆觸，勾勒出貓咪那雙閃亮的大眼睛、毛茸茸的尾巴、還有慵懶伸展的小爪子，</p>
+                    <p>每一個瞬間都如同散發著魔法的夢境。🐾</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <p> ⭐合作流程⭐ </p>
+                    <p>聯繫畫家： 請通過電子郵件或社交媒體私信聯繫我們，</p>
+                    <p>說明您的需求（例如，貓咪照片、畫作風格、背景元素等）。</p>
+                    <p>我們會根據您的需求提供初步報價和創作時間表。</p>
+                    <p>確認訂單與付款： 確認合作細節後，請支付訂金以確認訂單。餘款在作品完成後支付。</p>
+                    <p> 創作與確認： 進行創作過程，並在完成初稿後與您進行確認，根據反饋進行修改。</p>
+                    <p> 交付作品： 完成後將數位版交付或安排實體作品寄送。</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

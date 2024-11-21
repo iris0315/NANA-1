@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NANA貓咪認養網</title>
+    <style>
+        * {
+            /* 取消預設邊界 */
+            margin: 0;
+            /* 取消預設縮排 */
+            padding: 0;
+            /* 字型設定 */
+            font-family: 微軟正黑體;
+            background-color: rgb(236, 245, 255);
+        }
+
+        .wrap {
+
+            /* 固定寬度 */
+            width: 1200px;
+            /* 段隨著網頁移動: div 的網頁(頁邊)置中對齊 */
+            margin: auto;
+            /* 文字及物件的置中對齊 */
+            /* text-align: center; */
+
+        }
+
+        .nav {
+            float: right;
+            margin-bottom: 50px;
+
+        }
+
+
+        .nav ul li {
+            float: left;
+            margin-right: 20px;
+            list-style: none;
+        }
+
+        .nav ul li a {
+            /* 取消超連結底線 */
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+
+        }
+
+        .nav ul li a:hover {
+            color: rgb(241, 241, 241);
+            /* 超連結背景色 */
+            background-color: rgb(83, 73, 224);
+            padding: 10px;
+            height: 90px;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+
+        .header {
+            /* 寬度 */
+            width: 300px;
+            /* 高度 */
+            height: 110px;
+            /* 定位基準點 */
+            position: relative;
+        }
+
+        .header img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .box {
+            /* border: 1px solid red; */
+            /* 寬度 */
+            width: 1200px;
+            /* 高度 */
+            height: 400px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .box img {
+
+            height: 350px;
+            width: 350px;
+        }
+
+        .box :hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 20px rgba(58, 58, 58, 0.438);
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="wrap">
+
+
+        <div class="space">
+            <!-- 首頁區 -->
+            <div class="header">
+                <!-- LOGO -->
+                <a href="./index.html">
+                    <img src="./image/logo.png" alt="">
+                </a>
+            </div>
+            <!-- 選單區 -->
+            <div class="nav">
+                <ul>
+                    <li><a href="#">貓貓認養</a></li>
+                    <li><a href="./nana3.html">販售貓周邊</a></li>
+                    <li><a href="./nana4.html">愛心捐贈</a></li>
+                    <li><a href="./nana5.html">手繪貓貓照</a></li>
+                </ul>
+            </div>
+            <!-- 內容區 -->
+            <div class="content">
+                <div class="box">
+                    <img src="./image/image-2(1).png" alt="">
+                    <img src="./image/image-2(2).png" alt="">
+                    <img src="./image/image-2(3).png" alt="">
+
+                </div>
+                <div class="box">
+                    <img src="./image/image-2(4).png" alt="">
+                    <img src="./image/image-2(5).png" alt="">
+                    <img src="./image/image-2(6).png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
